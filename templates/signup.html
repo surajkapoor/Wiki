@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>WikiPage</title>
+<link href="/static/main.css" type="text/css" rel="stylesheet"/>
+</head>
+    <form method = "post">
+  <body>
+	  <fieldset class = "registration-box" id = "fieldset">
+	<form method = "post">
+		<div class = "registration-box" id = "login"></div>
+			<div>	  
+    			<label>username:<input type='text' name='username' value='{{ent_name}}' class = "registration-box"></label>
+					<span class = "registration-box" style='color:red'>{{name_error}}</span>
+			</div>
+			<div>
+    			<label>password:<input type='password' name='password' class = "registration-box"></label>
+					<span class = "registration-box" style='color:red'>{{pw_error}}</span>
+			</div>
+			<div>
+    			<label>verify:<input type='password' name='verify' class = "registration-box"></label>
+					<span class = "registration-box" style='color:red'>{{ver_error}}</span>
+			</div>
+			<div>			
+    			<label>email (optional):<input type='text' name='email' value ='{{email}}' class = "registration-box"></label>
+					<span "registration-box" style='color:red'>{{email_error}}</span>
+			</div>	
+			<div>	
+    			<input type="submit" id = "submit">
+			</div>
+			<div>
+				<a id = "reg-option" href="/login">login here</a>
+			</div>	
+    	</form>
+	</fieldset>
+  </body>
+</html>

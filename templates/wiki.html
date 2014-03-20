@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wiki</title>
+<link href="/static/main.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div id = "nav-box">
+	<ul id = "navlist">
+		<li><a id = "global-link" href = '/'>WIKI</a></li>
+			<li><a class = "sub-nav" href = "/login">login</a><li>
+			<li><a class = "sub-nav" href = "/signup">signup</a><li>	
+			<li><a class = "sub-nav" href ={{history_link}}>history</a></li>
+			<li><a class = "sub-nav" href ={{edit_link}}>edit</a></li>
+			
+	</ul>	
+<div>
+	<h1 class = "wiki_name">{{wiki_name}}</h1>
+		<div class = "wiki-content">{{content|safe}}</div>
+</div>
+
+</div>	
+	
+{% for item in latest_updates %}
+<div class = "updates">
+	<a href = "{{item.url}}" id = "url">#{{(item.url)[1:]}}</a>
+	<div id = "content">{{(item.content)[:50]}}...</div>	
+	<div id = "date-time"> - {{item.created.strftime('%b %d, %Y, %H:%M:%S')}}</div>
+	<br>
+</div>	
+		{% endfor %}
+<br>		
+</body>
+</html>

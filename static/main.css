@@ -1,0 +1,115 @@
+body {
+		font-family: arial;}
+		
+table {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 50px;}
+
+tr#table-header {
+		font-size: 20px;
+		height: 100px;}
+		
+td {  	
+		border-bottom: 1px dotted;}				
+
+tr.table {
+		font-size: 15px;
+		border-bottom: 1px solid black;}
+		
+td.date-time {
+		font-style: italic;}
+		
+td.content {
+		font-weight: bold;
+		padding: 5px;}
+		
+.empty-cell {
+		width: 10px;}
+		
+a:link {
+		color: green;}
+
+a:visited {
+		color:red;
+		text-decoration: underline;}						
+
+#navlist li{  
+		display: inline;
+		list-style: none;
+		margin: 0px;
+		width: 100%;}
+		
+#nav-box {
+		width:100%;
+		height: 50px;
+		color: black;}		
+
+.sub-nav {
+		float: right;
+		padding: 10px 20px 0px 0px;}		
+
+#global-link {
+		font-size: 100px;}	
+		
+#fieldset {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 50px;
+		border: 0px;}
+		
+.registration-box {
+		width:300px;
+		height:40px;
+		margin:5px;
+		font-size:20px;}
+
+#submit {
+		width:100px;
+		float: right;
+		margin-top: 20px;}
+		
+#reg-option {
+		font-size: 14px;
+		color: gray;
+		font-style: italic;
+		float:left;
+		margin-top: 20px;}	
+
+.wiki-content {
+		float:left;
+		padding: 10px;
+		width:65%;
+		border-right: dotted black 1px;}
+		
+.updates {
+		float:left;
+		padding: 10px;}
+		
+#content {
+		font-weight:bold;}
+		
+#date-time {
+		font-size: 10px;
+		text-align: right;}	
+		
+.edit {
+		margin-top: 100px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		border: 2px solid black;
+		height:400px;
+		width:800px;
+		font-size: 20px;
+		padding: 5px;}	
+		
+#edit-save {
+		display: block;
+		margin: 0 auto;
+		margin-top: 30px;
+		width: 300px;}
+
+		
+
+	

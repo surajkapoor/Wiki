@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WikiPage</title>
+<link href="/static/main.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+<table>
+<tr class = "table-header" id = "table-header">		
+	<th scope = "column">Date</th>
+	<th class = "empty-cell"></th>
+	<th scope = "column">Previous Entries</th>
+	<th class = "empty-cell"></th>
+	<th></th>
+	<th></th>
+</tr>
+{% for item in entries %}
+<tr class = 'table'>
+	<td class = 'date-time'>{{(item.created).strftime('%b %d, %Y, %H:%M:%S')}}</td>
+	<td></td>
+	<td class = 'content'>{{(item.content)[:100]}}...</td>
+	<td></td>
+	<td><a href =/_view/{{item.key().id()}}>view</a><td>
+	<td><a href =/_past_edit/{{item.key().id()}}>edit</a></td>
+</tr>
+	{% endfor %}
+</table>	
+</body>
+</html>
